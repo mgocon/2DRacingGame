@@ -6,7 +6,7 @@ public class Delivery : MonoBehaviour
 {
     [SerializeField] bool hasPackage;
     [SerializeField] Color32 hasPackageColor = new Color32(142, 85, 250, 255);
-    [SerializeField] Color32 noPackageColor = new Color32(255, 142, 15, 255);
+    [SerializeField] Color32 noPackageColor = new Color32(255, 255, 255, 255);
 
     SpriteRenderer spriteRenderer;
     void OnTriggerEnter2D(Collider2D other)

@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Collision.cs" />
     <Compile Include="Assets/Scripts/Driver.cs" />
+    <Compile Include="Assets/Scripts/PowerUps.cs" />
     <Compile Include="Assets/Scripts/Delivery.cs" />
     <Compile Include="Assets/Scripts/SimpleFollowCamera.cs" />
   </ItemGroup>

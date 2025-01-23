@@ -373,6 +373,7 @@
 "Assets/Scripts/Collision.cs"
 "Assets/Scripts/Delivery.cs"
 "Assets/Scripts/Driver.cs"
+"Assets/Scripts/PowerUps.cs"
 "Assets/Scripts/SimpleFollowCamera.cs"
 -langversion:9.0
 /deterministic

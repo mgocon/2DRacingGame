@@ -27,4 +27,9 @@ public class Driver : MonoBehaviour
         transform.Translate(0, y, 0);
         transform.Rotate(0, 0, x);
     }
+
+    public void SetMoveSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
 }
