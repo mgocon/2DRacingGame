@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Package
   - Customer
+  - PowerUp
   layers:
   - Default
   - TransparentFX
