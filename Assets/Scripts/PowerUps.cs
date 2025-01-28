@@ -1,17 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
     [SerializeField] bool hasPowerUp;
-    [SerializeField] private float powerUpMoveSpeed = 20f; //Speed when power-up is active
+    [SerializeField] private float powerUpMoveSpeed = 20f; // Speed when power-up is active
     [SerializeField] private float defaultMoveSpeed = 10f;
-    [SerializeField] Color32 hasPowerUpColor = new Color32(90, 140, 12, 255);
-    [SerializeField] Color32 defaultColor = new Color32(255, 255, 255, 255);
 
-    SpriteRenderer spriteRenderer;
     private Driver driver;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -24,8 +19,7 @@ public class PowerUps : MonoBehaviour
 
             if (driver != null)
             {
-                spriteRenderer.color = hasPowerUpColor;
-                driver.SetMoveSpeed(powerUpMoveSpeed);
+                driver.SetMoveSpeed(powerUpMoveSpeed); // Apply speed boost
                 hasPowerUp = true;
                 StartCoroutine(RemovePowerUpAfterDelay(5f));
             }
@@ -40,11 +34,7 @@ public class PowerUps : MonoBehaviour
 
         if (driver != null)
         {
-            driver.SetMoveSpeed(defaultMoveSpeed);
-        }
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = defaultColor;
+            driver.SetMoveSpeed(defaultMoveSpeed); // Revert to default speed
         }
 
         hasPowerUp = false;
@@ -54,12 +44,12 @@ public class PowerUps : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        // Initialization, if needed
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        // Any ongoing logic, if needed
     }
 }
