@@ -5,9 +5,9 @@ public class PowerUps : MonoBehaviour
 {
     [SerializeField] bool hasPowerUp;
     [SerializeField] private float powerUpMoveSpeed = 20f; // Speed when power-up is active
-    [SerializeField] private float defaultMoveSpeed = 10f;
+    [SerializeField] private float defaultMoveSpeed = 8f; // Default speed
 
-    private Driver driver;
+    private Driver driver; // Reference to the driver script
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,7 +15,7 @@ public class PowerUps : MonoBehaviour
         {
             Debug.Log("Power up has been picked up");
 
-            driver = FindObjectOfType<Driver>();
+            driver = FindObjectOfType<Driver>(); 
 
             if (driver != null)
             {

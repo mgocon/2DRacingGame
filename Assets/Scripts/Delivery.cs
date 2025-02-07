@@ -38,6 +38,22 @@ public class Delivery : MonoBehaviour
             spriteRenderer.color = noPackageColor;
         }
     }
+
+    //!Option in order to not pass through the customer, NOTE: NOT WORKING!!
+    // void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     if(other.gameObject.tag == "Customer" && !hasPackage)
+    //     {
+    //         Debug.Log("Failed to deliver, you don't have the package.");
+    //     }
+    //     else if(other.gameObject.tag == "Customer" && hasPackage)
+    //     {
+    //         Debug.Log("Package delivered to customer.");
+    //         hasPackage = false;
+    //         spriteRenderer.color = noPackageColor;
+    //     }
+    // }
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

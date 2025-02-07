@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Week2Minigame.sln"
+    "dotnet.defaultSolution": "2DRacingGame.sln"
 }

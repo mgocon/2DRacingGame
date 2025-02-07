@@ -9,10 +9,10 @@ public class SimpleFollowCamera : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        //kung kanino binigay, siya ito
+
         transform.position = thingToFollow.transform.position + new Vector3(0, 0, -10);
 
-        //Position ni Camera = Position Player
+        //Position of the camera is the position of the player
         //[x, y, z] = [x, y, z]
 
         //[x, y, z] = new Vector3(0, 0, -10)
